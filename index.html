@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- Typing script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <title> Responsive portfolio website Ansel </title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Soufiane</a>
+                
+                <div class="nav__menu">
+                    <ul class="nav__list">
+
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bxs-user'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-book'></i>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <i class='bx bx-briefcase-alt-2'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-message-square-detail'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button" ></i>
+            </nav>
+        </header> 
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__name">Soufiane DAHIMI</h1>
+                        <h3 class="home__education">I'm <span class="typed"></span></h3>
+                        <div class="home__buttons">
+                            <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button-ghost">
+                                Download CV
+                            </a>
+                            <a href="#about" class="button">About me</a>
+                        </div>
+                    </div>
+                    
+                    <div class="home__handle">
+                        <img src="assets/img/perfil.png" alt="" class="home__img">
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/soufiane-dahimi/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-linkedin-square' ></i>
+                        </a>
+                        <a href="https://github.com/Dahimi" target="_blank" class="home__social-link">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                        <a href="https://twitter.com/DahimiSoufiane" target="_blank" class="home__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+                    </div>
+
+                    <a href="#about" class="home__scroll">
+                        <i class='bx bx-mouse home__scroll-icon' ></i>
+                        <span class="home__scroll-name">Scroll Down</span>
+                    </a>
+                </div>
+            </section>
+            
+            <!--=============== ABOUT ===============-->
+            <section class="about section" id="about">
+                <span class="section__subtitle">
+                    My Intro
+                </span>
+                <h2 class="section__title">
+                    About Me
+                </h2>
+                <div class="about__container container grid">
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                    <div class="about__data">
+                        <div class="about__info">
+                            <div class="about__box">
+                                <i class='bx bx-award about-icon' ></i>
+                                <h3 class="about__title">Experience</h3>
+                                <span class="about__subtitle">2 Internships</span>
+                            </div>
+                            <div class="about__box">
+                                <i class='bx bx-briefcase-alt about-icon' ></i>
+                                <h3 class="about__title">Completed</h3>
+                                <span class="about__subtitle">10 + Projects</span>
+                            </div>
+                            <div class="about__box">
+                                <i class='bx bx-support about-icon' ></i>
+                                <h3 class="about__title">Support</h3>
+                                <span class="about__subtitle">Online 24/7</span>
+                            </div>
+                        </div>
+                        <p class="about__description">
+                            I'm an industrial engineering student, a Machine Learning and Data Science enthusiast, and a web developer. I'm fascinated by learning new technologies and anything that is STEM-related. 
+                            <br>So since high school, I’ve been honing my skills in programming, data science, industrial engineering, and more recently mechanical engineering. I’m passionate about the intersection of those disciplines and how they could help us solve problems.
+                            <br>Thanks for stopping by! 
+                        </p>
+
+                        <a href="#contact" class="button">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== SKILLS ===============-->
+            <section class="skills section" id="skills">
+                <span class="section__subtitle">My abilities</span>
+                <h2 class="section__title">My Experience</h2>
+
+                <div class="skills__container container grid">
+                    <div class="skills__content">
+                        <h3 class="skills__title">Industrial Engineering</h3>
+                    
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Operations Research</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Process Engineering</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Six Sigma</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Matlab & CAD</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Statistical Analysis</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Thermodynamics</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skills__content">
+                        <h3 class="skills__title">Data Science</h3>
+                    
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Python & Java</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Statistics</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Tableau & Excel</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">SQL</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Machine Learning</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Data Visualization</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__content">
+                        <h3 class="skills__title">Web development</h3>
+                    
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">HTML & CSS</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Django</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Spring</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Git & github</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== Qualification ===============-->
+            <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My personal journey</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target = '#education'>
+                            <i class='bx bxs-graduation qualification__icon' ></i>
+                            Education
+                        </div>
+                        <div class="qualification__button button--flex" data-target="#experience">
+                            <i class='bx bx-briefcase-alt qualification__icon' ></i>
+                            Relevant Experience
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!-- Qualification content 1-->
+                        <div class="qualification__content qualification__active" data-content id="education" >
+                            <!-- Qualifiaction 1-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Industrial Engineering Graduate</h3>
+                                    <span class="qualification__subtitle">EMINES - UM6P</span>
+                                    <div class="qualification__calendar">
+                                        <i class='bx bxs-calendar' ></i>
+                                        2021 - 2024
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                              
+                            <!-- Qualifiaction 2-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">Industrial Engineering Undergraduate</h3>
+                                    <span class="qualification__subtitle">EMINES - UM6P</span>
+                                    <div class="qualification__calendar">
+                                        <i class='bx bxs-calendar' ></i>
+                                        2019 - 2021
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <!-- Qualifiaction 3-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Baccalaureate diploma</h3>
+                                    <span class="qualification__subtitle">Al Jadida - High School</span>
+                                    <div class="qualification__calendar">
+                                        <i class='bx bxs-calendar' ></i>
+                                        2019 - 2020
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!--<span class="qualification__line"></span>-->
+                                </div>
+                            </div>
+
+                            
+                            
+                            
+                        </div>
+
+
+                        <!-- Qualification content 2-->
+                        <div class="qualification__content" data-content id="experience" >
+                            <!-- Qualifiaction 1-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Maintenance and Reliability Intern</h3>
+                                    <span class="qualification__subtitle">OCP - Morocco</span>
+                                    <div class="qualification__calendar">
+                                        <i class='bx bxs-calendar' ></i>
+                                        2022 June - July
+                                    </div>
+                                    <a href="" class="work__button">
+                                        More info <i class='bx bx-right-arrow-alt work__icon' ></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                              
+                            <!-- Qualifiaction 2-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">EMINES Technology Club Project Manager</h3>
+                                    <span class="qualification__subtitle">ETECH -Morocco</span>
+                                    <div class="qualification__calendar">
+                                        <i class='bx bxs-calendar' ></i>
+                                        2021 - Present
+                                    </div>
+                                    <a href="" class="work__button">
+                                        More info <i class='bx bx-right-arrow-alt work__icon' ></i>
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                            <!-- Qualifiaction 3-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Junior consutant</h3>
+                                    <span class="qualification__subtitle">EMINES Junior Enterprise - Morocco</span>
+                                    <div class="qualification__calendar">
+                                        <i class='bx bxs-calendar' ></i>
+                                        2021 - 2022
+                                    </div>
+                                    <a href="" class="work__button">
+                                        More info <i class='bx bx-right-arrow-alt work__icon' ></i>
+                                    </a>
+                                    
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!--<span class="qualification__line"></span>-->
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== WORK ===============-->
+            <section class="work section" id="work">
+                <span class="section__subtitle">My Portfolio</span>
+                <h2 class="section__title">Recet Works</h2>
+
+                <div class="work__filters">
+                    <span class="work__item active-work" data-filter = "all">All</span>
+                    <span class="work__item" data-filter=".web">Web</span>
+                    <span class="work__item" data-filter= ".data">Data</span>
+                    <span class="work__item" data-filter= ".engineering">Engineering</span>
+                </div>
+
+                <div class="work__container container grid">
+                    <div class="work__card mix web">
+                        <img src="assets/img/work1.jpg" alt="" class="work__img">
+                        <h3 class="work__title">UHACKS Landing Page</h3>
+                        <a href="https://dahimi.github.io/UHACK/" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                    </div>
+                    <div class="work__card mix web">
+                        <img src="assets/img/work1.jpg" alt="" class="work__img">
+                        <h3 class="work__title">Hospital Management System</h3>
+                        <a href="https://github.com/Dahimi/Hospital-Management-System" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                    </div>
+                    
+                    <div class="work__card mix web">
+                        <img src="assets/img/work2.jpg" alt="" class="work__img">
+                        <h3 class="work__title">Portfolio Website</h3>
+                        <a href="" class="work__button">
+                            More <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix engineering">
+                        <img src="assets/img/work3.jpg" alt="" class="work__img">
+                        <h3 class="work__title">Waste Heat Recovery System</h3>
+                        <a href="" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix data">
+                        <img src="assets/img/work4.jpg" alt="" class="work__img">
+                        <h3 class="work__title">Brand Design</h3>
+                        <a href="" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix data">
+                        <img src="assets/img/work5.jpg" alt="" class="work__img">
+                        <h3 class="work__title">App Movil</h3>
+                        <a href="" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== TESTIMONIALS ===============-->
+            <section class="testimonial section">
+                
+            </section>
+
+            <!--=============== CONTACT ===============-->
+            <section class="contact section" id="contact">
+                <span class="section__subtitle">Get in touch</span>
+                <h2 class="section__title">Contact Me</h2>
+
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+                        <h3 class="contact__title">Talk to me</h3>
+
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <i class='bx bx-mail-send contact__card-icon'></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">soufianedahimi01@gmail.com</span>
+
+                                <a href="mailto:soufianedahimi01@gmail.com" target="_blank" class="contact__button">
+                                    Write me<i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class='bx bx-mail-send contact__card-icon'></i>
+                                <h3 class="contact__card-title">Phone</h3>
+                                <span class="contact__card-data">+212682092732</span>
+
+                                <a href="tel:+212682092723" target="_blank" class="contact__button">
+                                    Call me<i class='bx bx-phone-call contact__button-icon'></i>
+                                </a>
+                            </div>
+                            
+                            <div class="contact__card">
+                                <i class='bx bx-mail-send contact__card-icon'></i>
+                                <h3 class="contact__card-title">Whatsapp</h3>
+                                <span class="contact__card-data">+212682092732</span>
+
+                                <a href="https://api.whatsapp.com/send?phone=212682092732&text=Hello, more information" target="_blank" class="contact__button">
+                                    Write me<i class='bx bxl-whatsapp contact__button-icon'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <h3 class="contact__title">Wrtie me your project</h3>
+                        
+                        <form action="" class="contact__form">
+                            <div class="contact__form-div ">
+                                <label for="" class="contact__form-tag">Name</label>
+                                <input type="text" placeholder="Insert your name" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Mail</label>
+                                <input type="text" placeholder="Insert your email" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag">Projects</label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
+                            </div>
+
+                            <button class="button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Soufiane</h1>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#work" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#qualification" class="footer__link">Qualifications</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://github.com/Dahimi" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                    <a href="https://twitter.com/DahimiSoufiane" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/soufiane-dahimi/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin-square' ></i>
+                    </a>
+                </ul>
+                <span class="footer__copy">
+                    &#169; Soufiane DAHIMI. All rights reserved
+                </span>
+            </div>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
