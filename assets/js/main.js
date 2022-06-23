@@ -101,7 +101,8 @@ var typed = new Typed(".typed",{
 /* =================form submission===============*/
 
 function send_form(){
-    alert("I am sorry, the contact form is disabled now. You could still reach out to me via my email adress")
+    swal("Oops I'm sorry!", "The contact form is disabled now, you could still reach out to me via my email address", "error");
+    //alert("I am sorry, the contact form is disabled now. You could still reach out to me via my email adress")
     /*
     var name = document.getElementById("form_name").value
     var email = document.getElementById("form_email").value
