@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
@@ -18,8 +20,6 @@
 
         <!-- Typing script -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
         <title> Responsive portfolio website Soufiane</title>
     </head>
     <body>
@@ -48,7 +48,11 @@
                                 <i class='bx bx-book'></i>
                             </a>
                         </li>
-                        
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class='bx bx-dumbbell'></i>
+                            </a>
+                        </li>
                         <li class="nav__item">
                             <a href="#work" class="nav__link">
                                 <i class='bx bx-briefcase-alt-2'></i>
@@ -349,7 +353,7 @@
             </section>
 
             <!--=============== Qualification ===============-->
-            <section class="qualification section">
+            <section class="qualification section" id="qualification">
                 <h2 class="section__title">Qualification</h2>
                 <span class="section__subtitle">My personal journey</span>
 
@@ -367,7 +371,7 @@
 
                     <div class="qualification__sections">
                         <!-- Qualification content 1-->
-                        <div class="qualification__content qualification__active" data-content id="education" >
+                        <div class="qualification__content" data-content id="education" >
                             <!-- Qualifiaction 1-->
                             <div class="qualification__data">
                                 <div>
@@ -425,7 +429,7 @@
 
 
                         <!-- Qualification content 2-->
-                        <div class="qualification__content" data-content id="experience" >
+                        <div class="qualification__content qualification__active" data-content id="experience" >
                             <!-- Qualifiaction 1-->
                             <div class="qualification__data">
                                 <div>
@@ -621,23 +625,23 @@
                     <div class="contact__content">
                         <h3 class="contact__title">Wrtie me your project</h3>
                         
-                        <form action="" class="contact__form">
+                        <form onsubmit="return false" class="contact__form">
                             <div class="contact__form-div ">
                                 <label for="" class="contact__form-tag">Name</label>
-                                <input type="text" placeholder="Insert your name" class="contact__form-input">
+                                <input id="form_name" type="text" placeholder="Insert your name" class="contact__form-input">
                             </div>
 
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Mail</label>
-                                <input type="text" placeholder="Insert your email" class="contact__form-input">
+                                <input id="form_email" type="text" placeholder="Insert your email" class="contact__form-input">
                             </div>
 
                             <div class="contact__form-div contact__form-area">
                                 <label for="" class="contact__form-tag">Projects</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
+                                <textarea name="" id="form_message" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
                             </div>
 
-                            <button class="button">Send Message</button>
+                            <button class="button" onclick="send_form()">Send Message</button>
                         </form>
                     </div>
                 </div>

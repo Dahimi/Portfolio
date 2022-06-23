@@ -96,3 +96,32 @@ var typed = new Typed(".typed",{
     startDelay: 100,
     loop: true
 });
+
+
+/* =================form submission===============*/
+
+function send_form(){
+    alert("I am sorry, the contact form is disabled now. You could still reach out to me via my email adress")
+    /*
+    var name = document.getElementById("form_name").value
+    var email = document.getElementById("form_email").value
+    var message = document.getElementById("form_message").value
+    if(isEmail(email)){
+        let url = "http://127.0.0.1:8000/contact/";
+        $.post( url,  {'name': name,'email' :email, 'message': message},function(response){
+           if(response == 1){
+            alert("Mail Sent, Thank you")
+           }
+        });
+    }
+    else{
+        alert("Make sure it is a valid email adress")
+    }
+    */
+    
+    
+}
+function isEmail(email) {
+    let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    return regex.test(String(email).toLowerCase());
+   }
