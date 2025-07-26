@@ -90,7 +90,7 @@ sr.reveal('.home__social, .home__scroll', {delay:900, origin:'bottom'});
 
 /*===================Typing animation===============*/
 var typed = new Typed(".typed",{
-    strings: ["an Industrial Engineer", "a Data Scientist", "a Web Developer"],
+    strings: ["a Software Engineer", "an AI Engineer", "a Solutions Engineer"],
     typeSpeed: 100,
     backSpeed: 50,
     startDelay: 100,
